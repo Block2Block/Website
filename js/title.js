@@ -1,5 +1,5 @@
 let title = "Hi, I'm Ethan."
-let callme = "Although most people call me block."
+let callme = "Although most people call me Block."
 let student = "I am a MEng Software Engineering Student at the University of Birmingham."
 
 let task;

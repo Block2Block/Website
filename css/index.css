@@ -329,10 +329,10 @@ span {
 .socials > a:hover {color:red;}   /* Mouse over link */
 .socials > a:active {color:darkred;}  /* Selected link   */
 
-.links > a {color:limegreen;}         /* Unvisited link  */
-.links > a:visited  {color:limegreen;} /* Visited link    */
-.links > a:hover {color:lawngreen;}   /* Mouse over link */
-.links > a:active {color:limegreen;}  /* Selected link   */
+.links > a {color:purple;}         /* Unvisited link  */
+.links > a:visited  {color:purple;} /* Visited link    */
+.links > a:hover {color:magenta;}   /* Mouse over link */
+.links > a:active {color:purple;}  /* Selected link   */
 
 .bar-container {
     width: 25%;
