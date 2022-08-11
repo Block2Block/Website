@@ -258,7 +258,7 @@
             <div class="intro">
                 <div class="project-container">
                     <div class="project-img">
-                        <img class="img-fluid" src="img/profile.png" width="60%" alt="AuroraMC Logo">
+                        <img class="img-fluid" src="img/profile.png" width="60%" alt="AuroraMC Logo" class="rounded">
                     </div>
                     <div class="project-box">
                         <div class="project-text-right">
