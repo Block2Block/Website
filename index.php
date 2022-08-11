@@ -9,6 +9,8 @@
     <meta name="keywords"  content="block2block,ethan" />
     <meta name="Resource-type" content="Document" />
 
+    <link rel="shortcut icon" type="image/png" href="img/profile.png"/>
+
 
     <link rel="stylesheet" type="text/css" href="fullpage/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
