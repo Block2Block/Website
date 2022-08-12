@@ -373,6 +373,10 @@ span {
     font-family: "Open Sans", sans-serif;
 }
 
+.inner-title {
+    font-family: "Open Sans", sans-serif;
+}
+
 .java {width: 70%; background-color: dodgerblue;}
 .sql {width: 70%; background-color: dodgerblue;}
 .js {width: 60%; background-color: dodgerblue;}
@@ -570,6 +574,45 @@ span {
     transition: opacity 3s;
 }
 
+.replay {
+    position:fixed;
+    bottom: 20px;
+    left: 20px;
+    transition: opacity 3s, transform 1s;
+    color: white;
+    transform-origin: center center;
+}
+
+.skip {
+    position:fixed;
+    bottom: 20px;
+    right: 0;
+    transform: translateX(-50%);
+    transition: opacity 1s;
+    color: white;
+    transform-origin: center center;
+}
+
+.skip:hover {
+    cursor: pointer;
+}
+
+.replay:hover {
+    cursor: pointer;
+    transform-origin: center center;
+    transition: transform 1s;
+    transform: rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+}
+
+.restart > a {color:white;}         /* Unvisited link  */
+.restart > a:visited  {color:white;} /* Visited link    */
+.restart > a:hover {
+    color:white;
+}   /* Mouse over link */
+.restart > a:active {color:white;}  /* Selected link   */
+
 .topbar {
     position:fixed;
     top:10px;
@@ -583,5 +626,26 @@ span {
 
 .toptext {
     padding-left: 20px;
+}
+
+.disabled {
+    cursor: default;
+    pointer-events: none;
+    user-select: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.disabled-text {
+    cursor: default;
+    user-select: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
 }
 

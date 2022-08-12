@@ -18,13 +18,13 @@
 </head>
 <body>
 
-<div id="topbar" class="topbar" style="opacity: 0">
+<div id="topbar" class="topbar disabled" style="opacity: 0">
     <img src="img/profile.png" width="90px" alt="Logo" class="rounded">
     <h1 class="toptext" id="section">Home</h1>
 </div>
 
 
-<ul id="menu" style="opacity: 0">
+<ul id="menu" style="opacity: 0" class="disabled">
     <li data-menuanchor="home"><a href="#home">Home</a></li>
     <li data-menuanchor="about"><a href="#about">About Me</a></li>
     <li data-menuanchor="work"><a href="#work">My Work</a></li>
@@ -33,17 +33,23 @@
 
 <div id="fullpage">
     <div class="section " id="section0">
-        <h1><span style="display:inline;visibility: hidden">_</span><span style="display:inline" id="title"></span><span style="display:inline" id="aftertitle">_</span></h1>
-        <p><span style="display:inline;visibility: hidden">_</span><span style="display:inline" id="callme"></span><span style="display:inline;visibility: hidden" id="aftercallme">_</span></p>
-        <p><span style="display:inline;visibility: hidden">_</span><span style="display:inline" id="student"></span><span style="display:inline;visibility: hidden" id="afterstudent">_</span></p>
-        <div id="scroll" class="scroll" style="opacity: 0">
+        <h1 class="disabled"><span style="display:inline;visibility: hidden">_</span><span style="display:inline" id="title"></span><span style="display:inline" id="aftertitle">_</span></h1>
+        <p class="disabled"><span style="display:inline;visibility: hidden">_</span><span style="display:inline" id="callme"></span><span style="display:inline;visibility: hidden" id="aftercallme">_</span></p>
+        <p class="disabled"><span style="display:inline;visibility: hidden">_</span><span style="display:inline" id="student"></span><span style="display:inline;visibility: hidden" id="afterstudent">_</span></p>
+        <div id="skip" class="skip">
+            <a onclick="skip()" class="restart"><i class="fas fa-forward fa-2x"></i></a>
+        </div>
+        <div id="replay" class="replay disabled" style="opacity: 0">
+            <a onclick="restart()" class="restart"><i class="fas fa-redo-alt fa-2x"></i></a>
+        </div>
+        <div id="scroll" class="scroll disabled" style="opacity: 0">
             <p><span>Scroll for more</span></p>
             <p>⇓</p>
         </div>
     </div>
 
     <div class="section" id="section1">
-        <div class="slide">
+        <div class="slide disabled">
             <div class="intro">
                 <div class="card">
                     <img data-src="img/profile.png" alt="Avatar" style="width:300px">
@@ -62,42 +68,42 @@
         </div>
         <div class="slide">
             <div class="intro">
-                <h1>Programming Languages</h1>
-                <p>Hover for more info.</p>
+                <h1 class="disabled">Programming Languages</h1>
+                <p class="disabled">Hover for more info.</p>
                 <br>
                 <div class="bar-container">
                     <div class="bar">
-                        <div class="java inner-bar"><span class="skills-title">Java  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have an extensive knowledge of many advanced techniques in Java, and is my main programming language.</span></div></span><span class="skills-percent">70%</span></div>
+                        <div class="java inner-bar"><span class="skills-title disabled-text">Java  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have an extensive knowledge of many advanced techniques in Java, and is my main programming language.</span></div></span><span class="skills-percent disabled">70%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="sql inner-bar"><span class="skills-title">SQL  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">While working in Java, I have experience working with SQL, particularly in regard to MySQL Database.</span></div></span><span class="skills-percent">70%</span></div>
+                        <div class="sql inner-bar"><span class="skills-title disabled-text">SQL  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">While working in Java, I have experience working with SQL, particularly in regard to MySQL Database.</span></div></span><span class="skills-percent disabled">70%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="js inner-bar"><span class="skills-title">JavaScript  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used JavaScript to create a Discord bot, and alongside Web Development projects.</span></div></span><span class="skills-percent">60%</span></div>
+                        <div class="js inner-bar"><span class="skills-title disabled-text">JavaScript  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used JavaScript to create a Discord bot, and alongside Web Development projects.</span></div></span><span class="skills-percent disabled">60%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="php inner-bar"><span class="skills-title">PhP  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used PhP in several Web Development projects to communicate with Databases.</span></div></span><span class="skills-percent">55%</span></div>
+                        <div class="php inner-bar"><span class="skills-title disabled-text">PhP  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used PhP in several Web Development projects to communicate with Databases.</span></div></span><span class="skills-percent disabled">55%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="python inner-bar"><span class="skills-title">Python  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used Python to create a website with Django, several GCSE coursework tasks and to make a Dijkstra's Pathfinding Algorithm.</span></div></span><span class="skills-percent">55%</span></div>
+                        <div class="python inner-bar"><span class="skills-title disabled-text">Python  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used Python to create a website with Django, several GCSE coursework tasks and to make a Dijkstra's Pathfinding Algorithm.</span></div></span><span class="skills-percent disabled">55%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="html inner-bar"><span class="skills-title">HTML  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used HTML with several Web Development projects.</span></div></span><span class="skills-percent">50%</span></div>
+                        <div class="html inner-bar"><span class="skills-title disabled-text">HTML  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used HTML with several Web Development projects.</span></div></span><span class="skills-percent disabled">50%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="vb inner-bar"><span class="skills-title">Visual Basic  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I created a Singleplayer BattleShips game in Visual Basic as a part of my A-Level Coursework.</span></div></span><span class="skills-percent">40%</span></div>
+                        <div class="vb inner-bar"><span class="skills-title disabled-text">Visual Basic  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I created a Singleplayer BattleShips game in Visual Basic as a part of my A-Level Coursework.</span></div></span><span class="skills-percent disabled">40%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="kotlin inner-bar"><span class="skills-title">Kotlin  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">While I have not published anything in Kotlin, I did begin learning Kotlin as a fun experiment and to see the differences from Java.</span></div></span><span class="skills-percent">40%</span></div>
+                        <div class="kotlin inner-bar"><span class="skills-title disabled-text">Kotlin  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">While I have not published anything in Kotlin, I did begin learning Kotlin as a fun experiment and to see the differences from Java.</span></div></span><span class="skills-percent disabled">40%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="c inner-bar"><span class="skills-title">C/C++  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used C/C++ as part of 2 university modules, to use techniques such as Buffer Overflow to exploit a VM, creating binary search trees and creating a kernel module.</span></div></span><span class="skills-percent">30%</span></div>
+                        <div class="c inner-bar"><span class="skills-title disabled-text">C/C++  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used C/C++ as part of 2 university modules, to use techniques such as Buffer Overflow to exploit a VM, creating binary search trees and creating a kernel module.</span></div></span><span class="skills-percent disabled">30%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="haskell inner-bar"><span class="skills-title">Haskell  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I used Haskell as part of a functional programming module. I used this to create several data structures and a parser.</span></div></span><span class="skills-percent">30%</span></div>
+                        <div class="haskell inner-bar"><span class="skills-title disabled-text">Haskell  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I used Haskell as part of a functional programming module. I used this to create several data structures and a parser.</span></div></span><span class="skills-percent disabled">30%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="agda inner-bar"><span class="skills-title">Agda  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I used Agda as part of an advanced functional programming module. Agda was mainly used to prove statements.</span></div></span><span class="skills-percent">30%</span></div>
+                        <div class="agda inner-bar"><span class="skills-title disabled-text">Agda  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I used Agda as part of an advanced functional programming module. Agda was mainly used to prove statements.</span></div></span><span class="skills-percent disabled">30%</span></div>
                     </div>
                 </div>
             </div>
@@ -109,34 +115,34 @@
                 <br>
                 <div class="bar-container">
                     <div class="bar">
-                        <div class="reflection inner-bar"><span class="skills-title">Java Reflection <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I am familiar with Java Reflection, its uses and the dangers associated with using raw classes, methods and variables.</span></div></span><span class="skills-percent">70%</span></div>
+                        <div class="reflection inner-bar"><span class="skills-title disabled-text">Java Reflection <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I am familiar with Java Reflection, its uses and the dangers associated with using raw classes, methods and variables.</span></div></span><span class="skills-percent disabled">70%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="discord inner-bar"><span class="skills-title">JDA/Discord.js  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have worked extensively with both frameworks to create advanced Discord bots to manage Discord servers using the Discord API.</span></div></span><span class="skills-percent">70%</span></div>
+                        <div class="discord inner-bar"><span class="skills-title disabled-text">JDA/Discord.js  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have worked extensively with both frameworks to create advanced Discord bots to manage Discord servers using the Discord API.</span></div></span><span class="skills-percent disabled">70%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="spigot inner-bar"><span class="skills-title">Spigot API  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used the Spigot API extensively to aid with Minecraft Plugin development.</span></div></span><span class="skills-percent">70%</span></div>
+                        <div class="spigot inner-bar"><span class="skills-title disabled-text">Spigot API  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used the Spigot API extensively to aid with Minecraft Plugin development.</span></div></span><span class="skills-percent disabled">70%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="nms inner-bar"><span class="skills-title">Minecraft Protocol/NMS  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used the Minecraft Protocol to create features such as Disguise and Fake Players.</span></div></span><span class="skills-percent">60%</span></div>
+                        <div class="nms inner-bar"><span class="skills-title disabled-text">Minecraft Protocol/NMS  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used the Minecraft Protocol to create features such as Disguise and Fake Players.</span></div></span><span class="skills-percent disabled">60%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="sockets inner-bar"><span class="skills-title">Sockets and Networking  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used Sockets to create a networking protocol in Java, and to bridge a Java and PhP application.</span></div></span><span class="skills-percent">60%</span></div>
+                        <div class="sockets inner-bar"><span class="skills-title disabled-text">Sockets and Networking  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used Sockets to create a networking protocol in Java, and to bridge a Java and PhP application.</span></div></span><span class="skills-percent disabled">60%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="django inner-bar"><span class="skills-title">Django  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used Django to create a website and a blog, which was my previous website.</span></div></span><span class="skills-percent">55%</span></div>
+                        <div class="django inner-bar"><span class="skills-title disabled-text">Django  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used Django to create a website and a blog, which was my previous website.</span></div></span><span class="skills-percent disabled">55%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="springboot inner-bar"><span class="skills-title">Spring Boot  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used Spring Boot to create a very basic RESTful API as part of a networking module.</span></div></span><span class="skills-percent">50%</span></div>
+                        <div class="springboot inner-bar"><span class="skills-title disabled-text">Spring Boot  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">I have used Spring Boot to create a very basic RESTful API as part of a networking module.</span></div></span><span class="skills-percent disabled">50%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="cryptography inner-bar"><span class="skills-title">Cryptography  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">As part of a security module, I have used a Java cryptography library to break a secure protocol and obtain a token.</span></div></span><span class="skills-percent">40%</span></div>
+                        <div class="cryptography inner-bar"><span class="skills-title disabled-text">Cryptography  <div class="tooltip"><i class="fas fa-info-circle"></i><span class="tooltiptext">As part of a security module, I have used a Java cryptography library to break a secure protocol and obtain a token.</span></div></span><span class="skills-percent disabled">40%</span></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="slide">
+        <div class="slide disabled">
             <div class="intro">
                 <h1>Development Tools</h1>
                 <br>
@@ -166,7 +172,7 @@
             </div>
         </div>
 
-        <div class="slide">
+        <div class="slide disabled">
             <div class="intro">
                 <h1>University Module Marks</h1>
                 <p>Only relevant modules are listed here.</p>
@@ -213,17 +219,17 @@
         <div class="slide">
             <div class="intro">
                 <div class="project-container">
-                    <div class="project-img">
+                    <div class="project-img disabled">
                         <img class="img-fluid" data-src="img/amc.png" width="60%" alt="AuroraMC Logo">
                     </div>
                     <div class="project-box">
                         <div class="project-text-right">
-                            <h1>AuroraMC</h1>
-                            <p>I am the Owner and Lead Developer for AuroraMC, a Custom-Written Minecraft network. I have written 7 Spigot API plugins, the network daemon, a Discord bot, a network administration panel and a chatlog website in a combination of Java, PhP, and SQL.</p>
-                            <br><p>In total, the codebase works out at over 100,000 lines of code in Java alone. and I have had to use many advanced techniques including but not limited to: Networking Protocols, Handling Player Connections, Sockets, Reflection, Dependency Management, CI Deployment, Load Balancing and many more.</p>
-                            <br><p>As this network is still operating, the source code is private. If you wish to see the source code, please contact me directly.</p>
+                            <h1 class="disabled">AuroraMC</h1>
+                            <p class="disabled">I am the Owner and Lead Developer for AuroraMC, a Custom-Written Minecraft network. I have written 7 Spigot API plugins, the network daemon, a Discord bot, a network administration panel and a chatlog website in a combination of Java, PhP, and SQL.</p>
+                            <br><p class="disabled">In total, the codebase works out at over 100,000 lines of code in Java alone. and I have had to use many advanced techniques including but not limited to: Networking Protocols, Handling Player Connections, Sockets, Reflection, Dependency Management, CI Deployment, Load Balancing and many more.</p>
+                            <br><p class="disabled">As this network is still operating, the source code is private. If you wish to see the source code, please contact me directly.</p>
                             <br>
-                            <p>Find out more:</p><br>
+                            <p class="disabled">Find out more:</p><br>
                             <div class="links">
                                 <a href="https://auroramc.net/"><i class="fas fa-link fa-4x"></i></a>
                                 <a href="https://twitter.com/_AuroraMC" style="padding-bottom: 10px"><i class="fab fa-twitter fa-4x"></i></a>
@@ -243,15 +249,15 @@
                 <div class="project-container">
                     <div class="project-box">
                         <div class="project-text-left">
-                            <h1>HubParkour</h1>
-                            <p>I develop a public Spigot plugin called HubParkour, a lightweight Parkour management plugin. The aim of the plugin is to be as lightweight as possible and have everything that a server owner may need to make simple parkours.</p>
+                            <h1 class="disabled">HubParkour</h1>
+                            <p class="disabled">I develop a public Spigot plugin called HubParkour, a lightweight Parkour management plugin. The aim of the plugin is to be as lightweight as possible and have everything that a server owner may need to make simple parkours.</p>
                             <br>
-                            <p>Find out more:</p><br>
+                            <p class="disabled">Find out more:</p><br>
                             <a href="https://github.com/Block2Block/HubParkour"><button type="button" class="btn btn-danger waves-effect waves-light">View on GitHub »</button></a>
                             <a href="https://nexus.block2block.me/#browse/browse:HubParkour"><button type="button" class="btn btn-danger waves-effect waves-light">Nexus Repository »</button></a>
                         </div>
                     </div>
-                    <div class="project-img">
+                    <div class="project-img disabled">
                         <img class="img-fluid" data-src="img/hp.webp" width="60%" alt="AuroraMC Logo">
                     </div>
                 </div>
@@ -260,17 +266,17 @@
         <div class="slide">
             <div class="intro">
                 <div class="project-container">
-                    <div class="project-img">
+                    <div class="project-img disabled">
                         <img class="img-fluid rounded" data-src="img/profile.png" width="60%" alt="AuroraMC Logo">
                     </div>
                     <div class="project-box">
                         <div class="project-text-right">
-                            <h1>University Assignments</h1>
-                            <p>There are a variety of assignments I have completed as a part of my degree covering a variety of different subjects. Most are written in Java, but there are projects in Python and Haskell too.</p>
+                            <h1 class="disabled">University Assignments</h1>
+                            <p class="disabled">There are a variety of assignments I have completed as a part of my degree covering a variety of different subjects. Most are written in Java, but there are projects in Python and Haskell too.</p>
                             <br>
-                            <p>I do also have a repository for my Team Project, but due to the fact that this was completed as part of a team, this is not public. Please contact me if you wish to see the source code for this.</p>
+                            <p class="disabled">I do also have a repository for my Team Project, but due to the fact that this was completed as part of a team, this is not public. Please contact me if you wish to see the source code for this.</p>
                             <br>
-                            <p>Find out more:</p><br>
+                            <p class="disabled">Find out more:</p><br>
                             <a href="https://github.com/Block2Block?tab=repositories&q=PIJ"><button type="button" class="btn btn-secondary waves-effect waves-light">Programming in Java »</button></a>
                             <a href="https://github.com/Block2Block?tab=repositories&q=DSA"><button type="button" class="btn btn-secondary waves-effect waves-light">Data Structures & Algorithms »</button></a><br>
                             <a href="https://github.com/Block2Block/Networking-Assignment-2"><button type="button" class="btn btn-secondary waves-effect waves-light">Advanced Networking »</button></a>
@@ -287,16 +293,16 @@
                 <div class="project-container">
                     <div class="project-box">
                         <div class="project-text-left">
-                            <h1>Web Projects</h1>
-                            <p>I've made a few web projects, mostly for fun/a joke, but did try to challenge myself to make something useable. Most of these website I have since stopped hosting, but the source code is available to view.</p>
+                            <h1 class="disabled">Web Projects</h1>
+                            <p class="disabled">I've made a few web projects, mostly for fun/a joke, but did try to challenge myself to make something useable. Most of these website I have since stopped hosting, but the source code is available to view.</p>
                             <br>
-                            <p>Find out more:</p><br>
+                            <p class="disabled">Find out more:</p><br>
                             <a href="https://github.com/Block2Block/ScapeGoat"><button type="button" class="btn btn-web waves-effect waves-light">Scape Goat Generator »</button></a>
                             <a href="https://github.com/Block2Block/EPQ"><button type="button" class="btn btn-web waves-effect waves-light">EPQ »</button></a>
                             <a href="https://github.com/Block2Block/Website"><button type="button" class="btn btn-web waves-effect waves-light">This Website »</button></a>
                         </div>
                     </div>
-                    <div class="project-img">
+                    <div class="project-img disabled">
                         <img class="img-fluid" data-src="img/php.png" width="60%" alt="AuroraMC Logo">
                     </div>
                 </div>
@@ -305,15 +311,15 @@
         <div class="slide">
             <div class="intro">
                 <div class="project-container">
-                    <div class="project-img">
+                    <div class="project-img disabled">
                         <img class="img-fluid" data-src="img/archive.webp" width="60%" alt="AuroraMC Logo">
                     </div>
                     <div class="project-box">
                         <div class="project-text-right">
-                            <h1>Legacy Projects</h1>
-                            <p>As is the nature of software development, projects will come and go. Here are a few projects that I no longer maintain, have since replaced, or is old coursework from before University.</p>
+                            <h1 class="disabled">Legacy Projects</h1>
+                            <p class="disabled">As is the nature of software development, projects will come and go. Here are a few projects that I no longer maintain, have since replaced, or is old coursework from before University.</p>
                             <br>
-                            <p>Find out more:</p><br>
+                            <p class="disabled">Find out more:</p><br>
                             <a href="https://github.com/Block2Block/HubParkour-Legacy"><button type="button" class="btn btn-archive waves-effect waves-light">Legacy HubParkour »</button></a>
                             <a href="https://github.com/Block2Block/HotPotato"><button type="button" class="btn btn-archive waves-effect waves-light">HotPotato »</button></a>
                             <a href="https://github.com/Block2Block/BridgingCoursework"><button type="button" class="btn btn-archive waves-effect waves-light">Previous Home Page »</button></a><br>
@@ -373,6 +379,7 @@
         onLeave: function(origin, destination, direction, trigger) {
             document.getElementById("topbar").style.opacity = "1";
             document.getElementById("menu").style.opacity = "1";
+            document.getElementById("menu").classList.remove("disabled");
             switch (destination.anchor) {
                 case "socials" :{
                     document.getElementById("section").innerHTML = "My Socials"
