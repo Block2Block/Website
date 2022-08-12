@@ -51,6 +51,10 @@ function typeWriterStudent() {
         document.getElementById("student").innerHTML += student.charAt(i);
         i++;
         setTimeout(typeWriterStudent, speed);
+    } else {
+        setTimeout(() => {
+            document.getElementById("scroll").style.opacity = "1";
+        }, 500)
     }
 }
 

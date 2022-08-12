@@ -103,7 +103,7 @@ p{
 }
 #menu{
     position:fixed;
-    top:20px;
+    top:40px;
     right:20px;
     height: 40px;
     z-index: 70;
@@ -112,6 +112,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    transition: opacity 1s;
 }
 .twitter-share-button{
     position: fixed !important;
@@ -559,5 +560,28 @@ span {
 
 .rounded {
     border-radius: 5px 5px 5px 5px;
+}
+
+.scroll {
+    position:fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 3s;
+}
+
+.topbar {
+    position:fixed;
+    top:10px;
+    left:20px;
+    color:white;
+    z-index:999;
+    display: flex;
+    align-items: center;
+    transition: opacity 1s;
+}
+
+.toptext {
+    padding-left: 20px;
 }
 

@@ -18,12 +18,13 @@
 </head>
 <body>
 
-<div style="position:fixed;top:20px;left:20px;color:white;z-index:999;">
-    <img src="img/profile.png" width="100px" alt="Logo" class="rounded">
+<div id="topbar" class="topbar" style="opacity: 0">
+    <img src="img/profile.png" width="90px" alt="Logo" class="rounded">
+    <h1 class="toptext" id="section">Home</h1>
 </div>
 
 
-<ul id="menu">
+<ul id="menu" style="opacity: 0">
     <li data-menuanchor="home"><a href="#home">Home</a></li>
     <li data-menuanchor="about"><a href="#about">About Me</a></li>
     <li data-menuanchor="work"><a href="#work">My Work</a></li>
@@ -32,18 +33,20 @@
 
 <div id="fullpage">
     <div class="section " id="section0">
-
         <h1><span style="display:inline;visibility: hidden">_</span><span style="display:inline" id="title"></span><span style="display:inline" id="aftertitle">_</span></h1>
         <p><span style="display:inline;visibility: hidden">_</span><span style="display:inline" id="callme"></span><span style="display:inline;visibility: hidden" id="aftercallme">_</span></p>
         <p><span style="display:inline;visibility: hidden">_</span><span style="display:inline" id="student"></span><span style="display:inline;visibility: hidden" id="afterstudent">_</span></p>
+        <div id="scroll" class="scroll" style="opacity: 0">
+            <p><span>Scroll for more</span></p>
+            <p>⇓</p>
+        </div>
     </div>
 
     <div class="section" id="section1">
         <div class="slide">
             <div class="intro">
-                <h1>About Me</h1>
                 <div class="card">
-                    <img src="img/profile.png" alt="Avatar" style="width:300px">
+                    <img data-src="img/profile.png" alt="Avatar" style="width:300px">
                     <div class="container">
                         <h4><b>Ethan P-B</b></h4>
                         <p>🏳️‍🌈 | He/Him | 21</p>
@@ -211,7 +214,7 @@
             <div class="intro">
                 <div class="project-container">
                     <div class="project-img">
-                        <img class="img-fluid" src="img/amc.png" width="60%" alt="AuroraMC Logo">
+                        <img class="img-fluid" data-src="img/amc.png" width="60%" alt="AuroraMC Logo">
                     </div>
                     <div class="project-box">
                         <div class="project-text-right">
@@ -249,7 +252,7 @@
                         </div>
                     </div>
                     <div class="project-img">
-                        <img class="img-fluid" src="img/hp.webp" width="60%" alt="AuroraMC Logo">
+                        <img class="img-fluid" data-src="img/hp.webp" width="60%" alt="AuroraMC Logo">
                     </div>
                 </div>
             </div>
@@ -258,7 +261,7 @@
             <div class="intro">
                 <div class="project-container">
                     <div class="project-img">
-                        <img class="img-fluid rounded" src="img/profile.png" width="60%" alt="AuroraMC Logo">
+                        <img class="img-fluid rounded" data-src="img/profile.png" width="60%" alt="AuroraMC Logo">
                     </div>
                     <div class="project-box">
                         <div class="project-text-right">
@@ -293,7 +296,7 @@
                         </div>
                     </div>
                     <div class="project-img">
-                        <img class="img-fluid" src="img/php.png" width="60%" alt="AuroraMC Logo">
+                        <img class="img-fluid" data-src="img/php.png" width="60%" alt="AuroraMC Logo">
                     </div>
                 </div>
             </div>
@@ -302,7 +305,7 @@
             <div class="intro">
                 <div class="project-container">
                     <div class="project-img">
-                        <img class="img-fluid" src="img/archive.webp" width="60%" alt="AuroraMC Logo">
+                        <img class="img-fluid" data-src="img/archive.webp" width="60%" alt="AuroraMC Logo">
                     </div>
                     <div class="project-box">
                         <div class="project-text-right">
@@ -325,16 +328,14 @@
         </div>
     </div>
     <div class="section" id="section3">
-        <h1>My Socials</h1>
-        <br><br>
-        <div class="socials"><a href="https://twitter.com/EthanP_B" style="padding-bottom: 10px"><i class="fab fa-twitter fa-4x"></i></a>
-            <a href="https://twitch.tv/Block2Block_"><i class="fab fa-twitch fa-4x"></i></a>
-            <a href="https://github.com/Block2Block"><i class="fab fa-github fa-4x"></i></a>
-            <a href="mailto:ethan@block2block.me"><i class="fas fa-envelope fa-4x"></i></a>
-            <a href="https://www.reddit.com/user/Block2block" style="padding-bottom: 10px"><i class="fab fa-reddit fa-4x"></i></a>
-            <a href="https://discord.auroramc.net/"><i class="fab fa-discord fa-4x"></i></a>
-            <a href="https://www.youtube.com/channel/UCE1Si63LnGlDc_IVnG5unxg"><i class="fab fa-youtube fa-4x"></i></a>
-            <a href="https://steamcommunity.com/id/Block2Block"><i class="fab fa-steam fa-4x"></i></a></div>
+        <div class="socials"><a href="https://twitter.com/EthanP_B" style="padding-bottom: 10px"><i class="fab fa-twitter fa-8x"></i></a>
+            <a href="https://twitch.tv/Block2Block_"><i class="fab fa-twitch fa-8x"></i></a>
+            <a href="https://github.com/Block2Block"><i class="fab fa-github fa-8x"></i></a>
+            <a href="mailto:ethan@block2block.me"><i class="fas fa-envelope fa-8x"></i></a>
+            <a href="https://www.reddit.com/user/Block2block" style="padding-bottom: 10px"><i class="fab fa-reddit fa-8x"></i></a>
+            <a href="https://discord.auroramc.net/"><i class="fab fa-discord fa-8x"></i></a>
+            <a href="https://www.youtube.com/channel/UCE1Si63LnGlDc_IVnG5unxg"><i class="fab fa-youtube fa-8x"></i></a>
+            <a href="https://steamcommunity.com/id/Block2Block"><i class="fab fa-steam fa-8x"></i></a></div>
     </div>
 </div>
 
@@ -368,6 +369,28 @@
         afterRender: function(){
             start();
         },
+        onLeave: function(origin, destination, direction, trigger) {
+            document.getElementById("topbar").style.opacity = "1";
+            document.getElementById("menu").style.opacity = "1";
+            switch (destination.anchor) {
+                case "socials" :{
+                    document.getElementById("section").innerHTML = "My Socials"
+                    break;
+                }
+                case "work": {
+                    document.getElementById("section").innerHTML = "My Work"
+                    break;
+                }
+                case "about": {
+                    document.getElementById("section").innerHTML = "About Me"
+                    break;
+                }
+                case "home": {
+                    document.getElementById("section").innerHTML = "Home"
+                    break;
+                }
+            }
+        }
     });
 
 
