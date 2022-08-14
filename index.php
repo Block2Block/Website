@@ -5,8 +5,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Hi, I'm Ethan.</title>
     <meta name="author" content="Ethan P-B" />
-    <meta name="description" content="About Ethan/Block2Block" />
+
+
+    <meta name="title" content="Hi, I'm Ethan."/>
+    <meta name="type" content="website"/>
+    <meta name="url" content="https://block2block.me/"/>
+    <meta name="image" content="https://block2block.me/img/profile.png"/>
+    <meta name="description" content="Although most people people call me block. I'm a MEng Software Engineering Student at the University of Birmingham." />
+
+    <meta property="og:title" content="Hi, I'm Ethan."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://block2block.me/"/>
+    <meta property="og:image" content="https://block2block.me/img/profile.png"/>
+    <meta property="og:description" content="Although most people people call me block. I'm a MEng Software Engineering Student at the University of Birmingham." />
+
     <meta name="keywords"  content="block2block,ethan" />
+
     <meta name="Resource-type" content="Document" />
 
     <link rel="shortcut icon" type="image/png" href="img/profile.png"/>
