@@ -11,13 +11,13 @@
     <meta name="type" content="website"/>
     <meta name="url" content="https://block2block.me/"/>
     <meta name="image" content="https://block2block.me/img/profile.png"/>
-    <meta name="description" content="Although most people people call me block. I'm a MEng Software Engineering Student at the University of Birmingham." />
+    <meta name="description" content="Although most people people call me block. I'm a MEng Software Engineering Graduate from the University of Birmingham." />
 
     <meta property="og:title" content="Hi, I'm Ethan."/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://block2block.me/"/>
     <meta property="og:image" content="https://block2block.me/img/profile.png"/>
-    <meta property="og:description" content="Although most people people call me block. I'm a MEng Software Engineering Student at the University of Birmingham." />
+    <meta property="og:description" content="Although most people people call me block. I'm a MEng Software Engineering Graduate from the University of Birmingham." />
 
     <meta name="keywords"  content="block2block,ethan" />
 
@@ -65,12 +65,13 @@
     <div class="section" id="section1">
         <div class="slide disabled">
             <div class="intro">
-                <div class="card">
-                    <img data-src="img/profile.png" alt="Avatar" style="width:300px">
+                <div class="card" style="width:400px">
+                    <img data-src="img/profile.png" alt="Avatar" style="width:400px">
                     <div class="container">
                         <h4><b>Ethan P-B</b></h4>
-                        <p>🏳️‍🌈 | He/Him | 21</p>
+                        <p>🏳️‍🌈 | He/Him | 22</p>
                         <p>Birmingham, UK</p>
+                        <p>2:1 in MEng Computer Science/Software Engineering</p>
                         <br>
                         <p>Gamer (Mainly Minecraft)</p>
                         <p>Dance/Electronic Music Fan</p>
@@ -214,16 +215,16 @@
                         <div class="an inner-bar"><span class="skills-title">Advanced Networking</span><span class="skills-percent">77%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="ir inner-bar"><span class="skills-title">Intelligent Robotics</span><span class="skills-percent">75%</span></div>
-                    </div>
-                    <div class="bar">
                         <div class="sepp inner-bar"><span class="skills-title">Software Engineering & Professional Practice</span><span class="skills-percent">69%</span></div>
                     </div>
                     <div class="bar">
                         <div class="sn inner-bar"><span class="skills-title">Security & Networks</span><span class="skills-percent">65%</span></div>
                     </div>
                     <div class="bar">
-                        <div class="hci inner-bar"><span class="skills-title">Human-Computer Interaction</span><span class="skills-percent">63%</span></div>
+                        <div class="hci inner-bar"><span class="skills-title">Secure Software & Hardware Systems</span><span class="skills-percent">63%</span></div>
+                    </div>
+                    <div class="bar">
+                        <div class="fyp inner-bar"><span class="skills-title">Final Year Project</span><span class="skills-percent">62%</span></div>
                     </div>
                 </div>
             </div>

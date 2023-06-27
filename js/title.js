@@ -1,6 +1,6 @@
 let title = "Hi, I'm Ethan."
 let callme = "Although most people call me Block."
-let student = "I am a MEng Software Engineering Student at the University of Birmingham."
+let student = "I am a MEng Software Engineering Graduate from the University of Birmingham."
 
 let waitTask;
 let stage = 0;
